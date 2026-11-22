@@ -102,18 +102,18 @@ export default function WeeklyWavePageClient() {
       </div>
 
       {!loading && isDev && storage === "unavailable" && (
-        <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+        <div className="mb-6 rounded-xl border border-amber/40 bg-amber/10 p-4 text-sm text-amber">
           {t("devUnavailable")}
         </div>
       )}
 
       {!loading && isDev && storage === "local" && (
-        <div className="mb-6 rounded-xl border border-blue-200 bg-blue-50 p-4 text-sm text-blue-900">
+        <div className="mb-6 rounded-xl border border-cobalt/40 bg-cobalt/15 p-4 text-sm text-azure">
           {t("devLocal")}
         </div>
       )}
 
-      {error && <p className="mb-6 text-center text-sm text-red-500">{error}</p>}
+      {error && <p className="mb-6 text-center text-sm text-[#ff7a8c]">{error}</p>}
 
       {loading ? (
         <p className="text-center text-muted">{t("loading")}</p>
@@ -128,8 +128,8 @@ export default function WeeklyWavePageClient() {
             return (
               <article
                 key={item.id}
-                className={`rounded-xl border bg-white p-6 shadow-sm ${
-                  index === 0 ? "border-accent/30 ring-1 ring-accent/10" : "border-gray-100"
+                className={`rounded-xl border bg-glass p-6 shadow-xl shadow-black/30 ${
+                  index === 0 ? "border-accent/30 ring-1 ring-accent/10" : "border-lead"
                 }`}
               >
                 <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">
@@ -138,7 +138,7 @@ export default function WeeklyWavePageClient() {
                   </span>
                   <span className="text-muted">{formatDate(item.published_at)}</span>
                   {index === 0 && (
-                    <span className="rounded-full bg-amber-50 px-2.5 py-1 text-amber-700">
+                    <span className="rounded-full bg-amber/10 px-2.5 py-1 text-amber">
                       {t("latest")}
                     </span>
                   )}

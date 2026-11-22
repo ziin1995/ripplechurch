@@ -158,5 +158,9 @@
   },
   "logo": {
     "subtitle": "Book of Waves"
+  },
+  "music": {
+    "play": "Play music",
+    "pause": "Pause music"
   }
 }

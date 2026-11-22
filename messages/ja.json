@@ -158,5 +158,9 @@
   },
   "logo": {
     "subtitle": "波の書"
+  },
+  "music": {
+    "play": "BGMを再生",
+    "pause": "BGMを停止"
   }
 }

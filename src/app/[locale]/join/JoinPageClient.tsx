@@ -97,7 +97,7 @@ export default function JoinPageClient() {
 
       {!joined ? (
         <>
-          <div className="whitespace-pre-line rounded-xl border border-gray-100 bg-gray-50 p-6 text-base leading-relaxed text-foreground">
+          <div className="glass-panel-banded whitespace-pre-line p-7 font-serif text-base leading-loose text-foreground/90">
             {t("declaration")}
           </div>
 
@@ -112,7 +112,7 @@ export default function JoinPageClient() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder={t("namePlaceholder")}
-                className="w-full rounded-lg border border-gray-200 px-4 py-3 text-foreground placeholder:text-gray-400 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                className="w-full rounded-lg border border-lead-strong px-4 py-3 text-foreground placeholder:text-muted/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
               />
             </div>
 
@@ -130,7 +130,7 @@ export default function JoinPageClient() {
                 value={declaration}
                 onChange={(e) => setDeclaration(e.target.value)}
                 placeholder={t("declarationPlaceholder")}
-                className="w-full resize-none rounded-lg border border-gray-200 px-4 py-3 text-foreground placeholder:text-gray-400 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                className="w-full resize-none rounded-lg border border-lead-strong px-4 py-3 text-foreground placeholder:text-muted/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
               />
               <p className="mt-1 text-right text-xs text-muted">
                 {declaration.length}/{MAX_JOIN_CARD_DECLARATION_LENGTH}
@@ -138,13 +138,13 @@ export default function JoinPageClient() {
             </div>
           </div>
 
-          {joinError && <p className="mt-4 text-sm text-red-500">{joinError}</p>}
+          {joinError && <p className="mt-4 text-sm text-[#ff7a8c]">{joinError}</p>}
 
           <button
             type="button"
             onClick={handleJoin}
             disabled={joining}
-            className="mt-6 w-full rounded-full bg-accent py-3 text-sm font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+            className="mt-6 w-full rounded-full bg-gradient-to-b from-[#f6dc99] via-accent to-[#b98a37] py-3 text-sm font-semibold text-ink shadow-[0_10px_30px_-8px_rgba(226,187,98,0.55)] transition-opacity hover:opacity-90 disabled:opacity-50"
           >
             {joining ? t("joining") : t("submit")}
           </button>

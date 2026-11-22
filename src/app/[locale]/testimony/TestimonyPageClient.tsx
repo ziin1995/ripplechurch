@@ -151,18 +151,18 @@ export default function TestimonyPageClient() {
       </div>
 
       {!loading && isDev && storage === "unavailable" && (
-        <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+        <div className="mb-6 rounded-xl border border-amber/40 bg-amber/10 p-4 text-sm text-amber">
           {t("devUnavailable")}
         </div>
       )}
 
       {!loading && isDev && storage === "local" && (
-        <div className="mb-6 rounded-xl border border-blue-200 bg-blue-50 p-4 text-sm text-blue-900">
+        <div className="mb-6 rounded-xl border border-cobalt/40 bg-cobalt/15 p-4 text-sm text-azure">
           {t("devLocal")}
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className="mb-12 rounded-xl border border-gray-100 bg-gray-50 p-6">
+      <form onSubmit={handleSubmit} className="mb-12 rounded-xl border border-lead bg-glass-deep p-6">
         <div className="mb-4">
           <label htmlFor="nickname" className="mb-1 block text-sm font-medium text-foreground">
             {t("nickname")}
@@ -175,7 +175,7 @@ export default function TestimonyPageClient() {
             value={nickname}
             onChange={(e) => setNickname(e.target.value)}
             placeholder={t("nicknamePlaceholder")}
-            className="w-full rounded-lg border border-gray-200 px-4 py-2 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+            className="w-full rounded-lg border border-lead-strong px-4 py-2 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
           />
         </div>
 
@@ -191,17 +191,17 @@ export default function TestimonyPageClient() {
             value={content}
             onChange={(e) => setContent(e.target.value)}
             placeholder={t("contentPlaceholder")}
-            className="w-full resize-none rounded-lg border border-gray-200 px-4 py-2 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+            className="w-full resize-none rounded-lg border border-lead-strong px-4 py-2 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
           />
           <p className="mt-1 text-right text-xs text-muted">{content.length}/200</p>
         </div>
 
-        {error && <p className="mb-4 text-sm text-red-500">{error}</p>}
+        {error && <p className="mb-4 text-sm text-[#ff7a8c]">{error}</p>}
 
         <button
           type="submit"
           disabled={submitting || loading || storage === "unavailable"}
-          className="w-full rounded-full bg-accent py-3 text-sm font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50 sm:w-auto sm:px-8"
+          className="w-full rounded-full bg-gradient-to-b from-[#f6dc99] via-accent to-[#b98a37] py-3 text-sm font-semibold text-ink shadow-[0_10px_30px_-8px_rgba(226,187,98,0.55)] transition-opacity hover:opacity-90 disabled:opacity-50 sm:w-auto sm:px-8"
         >
           {submitting ? t("submitting") : t("submit")}
         </button>
@@ -216,7 +216,7 @@ export default function TestimonyPageClient() {
           {testimonies.map((item) => (
             <article
               key={item.id}
-              className="flex flex-col rounded-xl border border-gray-100 bg-white p-5 shadow-sm"
+              className="flex flex-col rounded-xl border border-lead bg-glass p-5 shadow-xl shadow-black/30"
             >
               <div className="mb-3 flex items-center justify-between">
                 <span className="font-medium text-foreground">{item.nickname}</span>

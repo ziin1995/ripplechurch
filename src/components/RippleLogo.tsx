@@ -14,10 +14,10 @@ export default function RippleLogo({
   subtitle = "Book of Waves",
 }: RippleLogoProps) {
   const isDark = variant === "dark";
-  const strokeOuter = isDark ? "rgba(74, 144, 217, 0.25)" : "rgba(74, 144, 217, 0.2)";
-  const strokeMid = isDark ? "rgba(74, 144, 217, 0.4)" : "rgba(74, 144, 217, 0.35)";
-  const strokeInner = isDark ? "#4a90d9" : "#4a90d9";
-  const figureFill = isDark ? "#ffffff" : "#1a1a2e";
+  const strokeOuter = isDark ? "rgba(226, 187, 98, 0.3)" : "rgba(74, 144, 217, 0.2)";
+  const strokeMid = isDark ? "rgba(226, 187, 98, 0.55)" : "rgba(74, 144, 217, 0.35)";
+  const strokeInner = isDark ? "#e2bb62" : "#4a90d9";
+  const figureFill = isDark ? "#f2e8d2" : "#1a1a2e";
   const titleFill = isDark ? "#ffffff" : "#1a1a2e";
   const subtitleFill = isDark ? "rgba(255,255,255,0.6)" : "#666666";
 

@@ -5,6 +5,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BackgroundMusic from "@/components/BackgroundMusic";
 import { routing, type Locale } from "@/i18n/routing";
 
 type Props = {
@@ -47,6 +48,13 @@ export default async function LocaleLayout({ children, params: { locale } }: Pro
           crossOrigin="anonymous"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Gowun+Batang:wght@400;700&family=Noto+Serif+JP:wght@400;600&display=swap"
+        />
+        <meta name="theme-color" content="#090a14" />
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-VMXLFE1QNH"
@@ -69,6 +77,7 @@ export default async function LocaleLayout({ children, params: { locale } }: Pro
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
+          <BackgroundMusic />
         </NextIntlClientProvider>
       </body>
     </html>

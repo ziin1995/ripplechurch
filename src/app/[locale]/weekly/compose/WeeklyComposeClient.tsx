@@ -144,7 +144,7 @@ export default function WeeklyComposeClient() {
     fields: LocaleFields,
     setFields: (next: LocaleFields) => void
   ) => (
-    <fieldset className="rounded-xl border border-gray-100 bg-gray-50 p-5">
+    <fieldset className="rounded-xl border border-lead bg-glass-deep p-5">
       <legend className="px-1 text-sm font-semibold text-foreground">{label}</legend>
       <div className="mb-4 mt-2">
         <label className="mb-1 block text-sm font-medium">{t("titleLabel")}</label>
@@ -154,7 +154,7 @@ export default function WeeklyComposeClient() {
           maxLength={120}
           value={fields.title}
           onChange={(e) => setFields({ ...fields, title: e.target.value })}
-          className="w-full rounded-lg border border-gray-200 px-4 py-2 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+          className="w-full rounded-lg border border-lead-strong px-4 py-2 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
         />
       </div>
       <div>
@@ -171,7 +171,7 @@ export default function WeeklyComposeClient() {
   if (!authenticated) {
     return (
       <section className="mx-auto flex min-h-[60vh] max-w-md flex-col justify-center px-4 py-12">
-        <div className="rounded-2xl border border-gray-100 bg-white p-8 shadow-sm">
+        <div className="rounded-2xl border border-lead bg-glass p-8 shadow-xl shadow-black/30">
           <p className="mb-1 text-center text-xs font-medium uppercase tracking-wider text-accent">
             {t("gateBadge")}
           </p>
@@ -191,16 +191,16 @@ export default function WeeklyComposeClient() {
                 value={gateSecret}
                 onChange={(e) => setGateSecret(e.target.value)}
                 placeholder={t("gateSecretPlaceholder")}
-                className="w-full rounded-lg border border-gray-200 px-4 py-3 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                className="w-full rounded-lg border border-lead-strong px-4 py-3 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
               />
             </div>
 
-            {gateError && <p className="text-sm text-red-500">{gateError}</p>}
+            {gateError && <p className="text-sm text-[#ff7a8c]">{gateError}</p>}
 
             <button
               type="submit"
               disabled={gateLoading}
-              className="rounded-full bg-accent py-3 text-sm font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+              className="rounded-full bg-gradient-to-b from-[#f6dc99] via-accent to-[#b98a37] py-3 text-sm font-semibold text-ink shadow-[0_10px_30px_-8px_rgba(226,187,98,0.55)] transition-opacity hover:opacity-90 disabled:opacity-50"
             >
               {gateLoading ? t("gateLoading") : t("gateSubmit")}
             </button>
@@ -230,7 +230,7 @@ export default function WeeklyComposeClient() {
         <button
           type="button"
           onClick={lock}
-          className="shrink-0 rounded-full border border-gray-200 px-4 py-2 text-xs text-muted transition-colors hover:border-foreground hover:text-foreground"
+          className="shrink-0 rounded-full border border-lead-strong px-4 py-2 text-xs text-muted transition-colors hover:border-foreground hover:text-foreground"
         >
           {t("lock")}
         </button>
@@ -248,7 +248,7 @@ export default function WeeklyComposeClient() {
               required
               value={publishedAt}
               onChange={(e) => setPublishedAt(e.target.value)}
-              className="w-full rounded-lg border border-gray-200 px-4 py-2 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+              className="w-full rounded-lg border border-lead-strong px-4 py-2 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
             />
           </div>
           <div>
@@ -261,7 +261,7 @@ export default function WeeklyComposeClient() {
               value={slug}
               onChange={(e) => setSlug(e.target.value)}
               placeholder={t("slugPlaceholder")}
-              className="w-full rounded-lg border border-gray-200 px-4 py-2 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+              className="w-full rounded-lg border border-lead-strong px-4 py-2 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
             />
           </div>
         </div>
@@ -270,13 +270,13 @@ export default function WeeklyComposeClient() {
         {renderLocaleFields("English", en, setEn)}
         {renderLocaleFields("日本語", ja, setJa)}
 
-        {error && <p className="text-sm text-red-500">{error}</p>}
-        {success && <p className="text-sm text-green-600">{success}</p>}
+        {error && <p className="text-sm text-[#ff7a8c]">{error}</p>}
+        {success && <p className="text-sm text-emerald">{success}</p>}
 
         <button
           type="submit"
           disabled={submitting}
-          className="rounded-full bg-accent px-8 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+          className="rounded-full bg-accent px-8 py-3 text-sm font-medium text-ink transition-opacity hover:opacity-90 disabled:opacity-50"
         >
           {submitting ? t("submitting") : t("submit")}
         </button>

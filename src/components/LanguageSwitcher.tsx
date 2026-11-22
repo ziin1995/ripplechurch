@@ -15,7 +15,7 @@ export default function LanguageSwitcher({ compact = false }: { compact?: boolea
 
   return (
     <div
-      className={`flex items-center rounded-full border border-gray-200 bg-white text-xs font-medium ${
+      className={`flex items-center rounded-full border border-accent/25 bg-black/30 text-xs font-medium ${
         compact ? "p-0.5" : "p-1"
       }`}
       role="group"
@@ -28,7 +28,7 @@ export default function LanguageSwitcher({ compact = false }: { compact?: boolea
           onClick={() => switchLocale(lang)}
           className={`rounded-full px-2.5 py-1 transition-colors ${
             locale === lang
-              ? "bg-accent text-white"
+              ? "bg-accent text-ink"
               : "text-muted hover:text-foreground"
           }`}
         >

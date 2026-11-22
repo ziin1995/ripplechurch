@@ -69,7 +69,7 @@ export default function JoinCardActions({
           type="button"
           onClick={handleSaveImage}
           disabled={saving}
-          className="rounded-full border border-accent px-6 py-3 text-sm font-medium text-accent transition-colors hover:bg-accent hover:text-white disabled:opacity-50"
+          className="rounded-full border border-accent px-6 py-3 text-sm font-medium text-accent transition-colors hover:bg-accent hover:text-ink disabled:opacity-50"
         >
           {saving ? t("saving") : t("saveImage")}
         </button>
@@ -77,7 +77,7 @@ export default function JoinCardActions({
           type="button"
           onClick={handleCopyLink}
           disabled={copying || !viewUrl}
-          className="rounded-full border border-foreground px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-foreground hover:text-white disabled:opacity-50"
+          className="rounded-full border border-foreground px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-foreground hover:text-ink disabled:opacity-50"
         >
           {copied ? t("copied") : t("copyLink")}
         </button>
@@ -85,7 +85,7 @@ export default function JoinCardActions({
           <button
             type="button"
             onClick={handleShare}
-            className="rounded-full border border-foreground px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-foreground hover:text-white"
+            className="rounded-full border border-foreground px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-foreground hover:text-ink"
           >
             {t("share")}
           </button>

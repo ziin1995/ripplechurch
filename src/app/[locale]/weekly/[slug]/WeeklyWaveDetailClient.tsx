@@ -124,7 +124,7 @@ export default function WeeklyWaveDetailClient({ slug }: { slug: string }) {
       <h1 className="mb-6 text-2xl font-semibold md:text-3xl">{title}</h1>
       <RichTextContent html={content} />
 
-      {error && <p className="mt-6 text-sm text-red-500">{error}</p>}
+      {error && <p className="mt-6 text-sm text-[#ff7a8c]">{error}</p>}
 
       <button
         type="button"

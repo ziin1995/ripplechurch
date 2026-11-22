@@ -32,8 +32,8 @@ function ToolbarButton({
       onClick={onClick}
       className={`rounded px-2 py-1 text-sm transition-colors ${
         active
-          ? "bg-accent text-white"
-          : "text-muted hover:bg-gray-100 hover:text-foreground"
+          ? "bg-accent text-ink"
+          : "text-muted hover:bg-accent/10 hover:text-foreground"
       }`}
     >
       {children}
@@ -84,7 +84,7 @@ export default function RichTextEditor({
 
   if (!editor) {
     return (
-      <div className="min-h-[220px] rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm text-muted">
+      <div className="min-h-[220px] rounded-lg border border-lead-strong bg-glass px-4 py-3 text-sm text-muted">
         …
       </div>
     );
@@ -104,8 +104,8 @@ export default function RichTextEditor({
   const plainLength = stripHtmlTags(value).length;
 
   return (
-    <div className="overflow-hidden rounded-lg border border-gray-200 bg-white">
-      <div className="flex flex-wrap gap-1 border-b border-gray-100 bg-gray-50 px-2 py-2">
+    <div className="overflow-hidden rounded-lg border border-lead-strong bg-glass">
+      <div className="flex flex-wrap gap-1 border-b border-lead bg-glass-deep px-2 py-2">
         <ToolbarButton
           title="Bold"
           active={editor.isActive("bold")}
@@ -164,7 +164,7 @@ export default function RichTextEditor({
         </ToolbarButton>
       </div>
       <EditorContent editor={editor} />
-      <p className="border-t border-gray-100 px-3 py-1.5 text-right text-xs text-muted">
+      <p className="border-t border-lead px-3 py-1.5 text-right text-xs text-muted">
         {plainLength}자 · HTML {value.length}/{maxChars}
       </p>
     </div>

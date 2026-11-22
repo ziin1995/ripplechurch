@@ -102,7 +102,7 @@ export default function JoinCardViewerClient() {
         <h1 className="mb-4 text-center text-2xl font-semibold md:text-3xl">
           {tCard("lookupTitle")}
         </h1>
-        <div className="rounded-xl border border-gray-100 bg-gray-50 p-6 text-sm leading-relaxed text-foreground">
+        <div className="rounded-xl border border-lead bg-glass-deep p-6 text-sm leading-relaxed text-foreground">
           {tCard("invalidLink")}
           <br />
           {tCard("invalidLinkHint", { joinPath: `/${locale}/join` })}
@@ -117,7 +117,7 @@ export default function JoinCardViewerClient() {
         <h1 className="mb-4 text-center text-2xl font-semibold md:text-3xl">
           {tCard("lookupTitle")}
         </h1>
-        <div className="rounded-xl border border-red-100 bg-red-50 p-6 text-sm leading-relaxed text-red-900">
+        <div className="rounded-xl border border-ruby/40 bg-ruby/15 p-6 text-sm leading-relaxed text-[#ff9aa8]">
           {tCard("invalidMember")}
           <br />
           {tCard("invalidMemberHint")}
