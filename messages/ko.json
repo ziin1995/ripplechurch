@@ -1,13 +1,20 @@
 {
   "metadata": {
-    "siteTitle": "Ripple Church",
-    "siteDescription": "인간은 파동을 방출하고 감지한다. 선한 파동을 만들어라.",
-    "aboutTitle": "소개 — Ripple Church",
-    "scriptureTitle": "파동의 서 — Ripple Church",
-    "joinTitle": "입교 — Ripple Church",
+    "siteTitle": "Ripple Church | 파동의 새로운 종교",
+    "siteDescription": "Ripple Church(리플교회)는 파동을 믿는 새로운 종교입니다. 경전 《파동의 서》, 온라인 입교, 주간 파동과 간증을 통해 현대의 외로움과 SNS 피로에 닿는 영성을 탐구합니다.",
+    "keywords": "Ripple Church, 리플교회, 새로운 종교, 신흥 종교, 파동, 파동의 서, 영성, 온라인 교회, 입교, 간증, meme religion",
+    "aboutTitle": "소개 — Ripple Church | 새로운 종교",
+    "aboutDescription": "Ripple Church가 무엇인지, 파동이란 무엇인지, 왜 지금 이 믿음이 필요한지 소개합니다. 밈처럼 보이지만 현대인의 외로움을 다루는 새로운 종교입니다.",
+    "scriptureTitle": "파동의 서 — Ripple Church 경전",
+    "scriptureDescription": "Ripple Church의 경전 《파동의 서》와 십계를 읽으세요. 인간은 파동을 방출하고 감지한다—선한 파동을 만들어라.",
+    "joinTitle": "입교 — Ripple Church에 참여하기",
+    "joinDescription": "Ripple Church에 온라인으로 입교하세요. 신도 번호와 입교 카드를 받고, 선한 파동을 만드는 공동체의 일원이 됩니다.",
     "joinCardTitle": "입교 카드 — Ripple Church",
+    "joinCardDescription": "Ripple Church 입교 카드를 조회합니다.",
     "testimonyTitle": "간증 — Ripple Church",
+    "testimonyDescription": "Ripple Church 신자들의 파동 간증을 읽고, 당신의 경험을 나눠 보세요.",
     "weeklyTitle": "주간 파동 — Ripple Church",
+    "weeklyDescription": "파동 송신자가 전하는 Ripple Church 주간 메시지. 매주 새로운 파동을 읽고 공명하세요.",
     "weeklyComposeTitle": "주간 파동 작성 — Ripple Church"
   },
   "nav": {

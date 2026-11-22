@@ -6,7 +6,9 @@ import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BackgroundMusic from "@/components/BackgroundMusic";
+import JsonLd from "@/components/JsonLd";
 import { routing, type Locale } from "@/i18n/routing";
+import { buildPageMetadata, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 type Props = {
   children: React.ReactNode;
@@ -23,11 +25,21 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "metadata" });
+  const keywords = t("keywords")
+    .split(",")
+    .map((item) => item.trim())
+    .filter(Boolean);
 
   return {
-    title: t("siteTitle"),
-    description: t("siteDescription"),
-    metadataBase: new URL("https://ripplechurch.net"),
+    metadataBase: new URL(SITE_URL),
+    applicationName: SITE_NAME,
+    ...buildPageMetadata({
+      locale,
+      path: "",
+      title: t("siteTitle"),
+      description: t("siteDescription"),
+      keywords,
+    }),
   };
 }
 
@@ -38,6 +50,7 @@ export default async function LocaleLayout({ children, params: { locale } }: Pro
 
   setRequestLocale(locale);
   const messages = await getMessages();
+  const tMeta = await getTranslations({ locale, namespace: "metadata" });
 
   return (
     <html lang={locale}>
@@ -55,6 +68,7 @@ export default async function LocaleLayout({ children, params: { locale } }: Pro
           href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Gowun+Batang:wght@400;700&family=Noto+Serif+JP:wght@400;600&display=swap"
         />
         <meta name="theme-color" content="#090a14" />
+        <JsonLd locale={locale} description={tMeta("siteDescription")} />
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-VMXLFE1QNH"

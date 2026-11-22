@@ -1,4 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { buildPageMetadata } from "@/lib/seo";
 
 type Props = { params: { locale: string } };
 
@@ -24,7 +25,12 @@ async function getScriptureContent(locale: string) {
 
 export async function generateMetadata({ params: { locale } }: Props) {
   const t = await getTranslations({ locale, namespace: "metadata" });
-  return { title: t("scriptureTitle") };
+  return buildPageMetadata({
+    locale,
+    path: "/scripture",
+    title: t("scriptureTitle"),
+    description: t("scriptureDescription"),
+  });
 }
 
 export default async function ScripturePage({ params: { locale } }: Props) {

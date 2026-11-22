@@ -1,13 +1,20 @@
 {
   "metadata": {
-    "siteTitle": "Ripple Church",
-    "siteDescription": "人間は波動を放射し、感知する。良い波動を作れ。",
-    "aboutTitle": "紹介 — Ripple Church",
-    "scriptureTitle": "波の書 — Ripple Church",
-    "joinTitle": "入教 — Ripple Church",
+    "siteTitle": "Ripple Church | 波動の新しい宗教",
+    "siteDescription": "Ripple Church（リップルチャーチ）は波動を信じる新しい宗教です。経典『波の書』、オンライン入教、週間の波動と証言を通して、現代の孤独とSNS疲れに触れるスピリチュアリティを探ります。",
+    "keywords": "Ripple Church, リップルチャーチ, 新しい宗教, 新興宗教, 波動, 波の書, スピリチュアル, オンライン教会, 入教, 証言",
+    "aboutTitle": "紹介 — Ripple Church | 新しい宗教",
+    "aboutDescription": "Ripple Churchとは何か、波動とは何か、なぜ今この信仰が必要なのかを紹介します。ミームのように見えて、現代の孤独に向き合う新しい宗教です。",
+    "scriptureTitle": "波の書 — Ripple Church 経典",
+    "scriptureDescription": "Ripple Churchの経典『波の書』と十戒を読んでください。人間は波動を放射し、感知する—良い波動を作れ。",
+    "joinTitle": "入教 — Ripple Churchに参加する",
+    "joinDescription": "Ripple Churchにオンラインで入教しましょう。信者番号と入教カードを受け取り、良い波動をつくる共同体の一員になります。",
     "joinCardTitle": "入教カード — Ripple Church",
+    "joinCardDescription": "Ripple Churchの入教カードを照会します。",
     "testimonyTitle": "証言 — Ripple Church",
+    "testimonyDescription": "Ripple Church信者の波動の証言を読み、あなたの体験を共有してください。",
     "weeklyTitle": "週間の波動 — Ripple Church",
+    "weeklyDescription": "波動送信者が届けるRipple Churchの週間メッセージ。毎週新しい波動を読んで共鳴してください。",
     "weeklyComposeTitle": "週間の波動作成 — Ripple Church"
   },
   "nav": {

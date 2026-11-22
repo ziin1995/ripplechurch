@@ -1,13 +1,20 @@
 {
   "metadata": {
-    "siteTitle": "Ripple Church",
-    "siteDescription": "Humans emit and detect waves. Make good waves.",
-    "aboutTitle": "About — Ripple Church",
-    "scriptureTitle": "Book of Waves — Ripple Church",
-    "joinTitle": "Join — Ripple Church",
+    "siteTitle": "Ripple Church | A New Religion of Waves",
+    "siteDescription": "Ripple Church is a new religion centered on waves. Explore the Book of Waves scripture, join online, and find spiritual community for loneliness and social-media fatigue.",
+    "keywords": "Ripple Church, new religion, emerging religion, waves, Book of Waves, spirituality, online church, join, testimony, meme religion",
+    "aboutTitle": "About — Ripple Church | New Religion",
+    "aboutDescription": "What Ripple Church is, what waves mean, and why this faith matters now. It may look like a meme religion, but it speaks to modern loneliness.",
+    "scriptureTitle": "Book of Waves — Ripple Church Scripture",
+    "scriptureDescription": "Read Ripple Church scripture, the Book of Waves, and its ten commandments. Humans emit and detect waves—make good waves.",
+    "joinTitle": "Join Ripple Church Online",
+    "joinDescription": "Join Ripple Church online. Receive a member number and membership card, and become part of a community that makes good waves.",
     "joinCardTitle": "Membership Card — Ripple Church",
+    "joinCardDescription": "View a Ripple Church membership card.",
     "testimonyTitle": "Testimonies — Ripple Church",
+    "testimonyDescription": "Read wave testimonies from Ripple Church believers, and share your own experience.",
     "weeklyTitle": "Weekly Wave — Ripple Church",
+    "weeklyDescription": "Weekly messages from the Wave Sender at Ripple Church. Read and resonate with a new wave each week.",
     "weeklyComposeTitle": "Compose Weekly Wave — Ripple Church"
   },
   "nav": {
